@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form - HTML 5</title>
+	<h1 align="center">FORM PENGISIAN</h1>
+</head>
+<body>
+    <form name="form 1" method="post" action="kirim.php">
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td> <input type="name" name="fnama"></td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td> <input type="number" name="fnim"></td>
+            </tr>
+            <tr>
+                <td> Program Studi</td>
+                <td><select name="fprodi">
+                    <option value=""> Pilih Program Studi</option>
+                    <option value="A11"> S1 - Teknik Informatika</option>
+                    <option value="A12"> S1 - Sistem Informasi</option>
+                    <option value="A13"> S1 - Ilmu Komunikasi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>
+                    <input type="date" name="ftanggal_lahir" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Bidang Minat</td>
+                <td>
+                    <input type="checkbox" name="Hobby 1" value="101">
+                    <label for="Hobby 1"> Web Developer</label><br>
+                    <input type="checkbox" name="Hobby 2" value="102">
+                    <label for="Hobby 2"> UI Designer</label><br>
+                    <input type="checkbox" name="Hobby 3" value="103">
+                    <label for="Hobby 3"> Mobile Developer</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
