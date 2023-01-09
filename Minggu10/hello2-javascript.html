@@ -7,14 +7,15 @@
     <title>Belajar HTML</title>
   </head>
   <body>
-    <script>
-      var yakin = confirm("Apakah kamu yakin akan mengunjungi website UDINUS?");
+    <h1>Tutorial Javascript untuk Pemula</h1>
+    <div id="hasil-output"></div>
 
-      if (yakin) {
-        window.location = "http://dinus.ac.id ";
-      } else {
-        document.write("belum, tetap di sini saja :)");
-      }
+    <script>
+      // membuat objek elemen
+      var hasil = document.getElementById("hasil-output");
+
+      // menampilkan output ke elemen hasil
+      hasil.innerHTML = "<p>Aku suka Javascript</p>";
     </script>
   </body>
 </html>

@@ -8,13 +8,10 @@
   </head>
   <body>
     <script>
-      var yakin = confirm("Apakah kamu yakin akan mengunjungi website UDINUS?");
+      var pertanyaan = confirm("Apakah kamu berumur diatas 18 tahun?");
 
-      if (yakin) {
-        window.location = "http://dinus.ac.id ";
-      } else {
-        document.write("belum, tetap di sini saja :)");
-      }
+      var hasil = pertanyaan ? "Selamat datang" : "Kamu tidak boleh di sini";
+      document.write(hasil);
     </script>
   </body>
 </html>
